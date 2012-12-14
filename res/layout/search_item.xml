@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TextView
+    	android:id="@+id/result_title"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+     	/>
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+	    android:stretchColumns="*"
+	    android:id="@+id/search_info_table">
+	    <TableRow>
+   
+	        <TextView
+	            android:text="Status"
+	            style="@style/FieldLabel" />
+    <TextView
+    	android:id="@+id/res_status"
+	            style="@style/InfoBox"
+     	/>
+     	</TableRow>
+     	<TableRow>
+	        <TextView
+	            android:text="Genre"
+	            style="@style/FieldLabel" />
+    <TextView
+    	android:id="@+id/res_genre"
+	            style="@style/InfoBox"
+     	/>
+     	</TableRow>
+     	</TableLayout>
+</LinearLayout>

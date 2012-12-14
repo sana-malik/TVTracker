@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 	android:orientation="vertical"
+	android:layout_height="fill_parent" 
+	android:layout_width="fill_parent"
+	android:scrollbars="none"
+	android:id="@+id/show_details">
+	
+	<!-- Show Info -->
+	<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/show_name"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		style="@style/SectionHeader" />
+	
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+	    android:stretchColumns="*"
+	    android:id="@+id/info_table">
+	    <TableRow>
+	        <TextView
+	            android:text="Classification:"
+	            style="@style/FieldLabel" />
+	        <TextView  
+	            android:id="@+id/classi" 
+	            style="@style/InfoBox" />
+	    </TableRow>
+	    
+	    <TableRow>
+	        <TextView
+	            android:text="Genres:" 
+	            style="@style/FieldLabel" />
+	        <TextView
+	            android:id="@+id/genres" 
+	            style="@style/InfoBox"  />
+	    </TableRow>
+	    
+	    <TableRow>
+	        <TextView
+	            android:text="Airs: "  
+	            style="@style/FieldLabel" />
+	        <TextView
+	            android:id="@+id/airs" 
+	            style="@style/InfoBox"  />
+	    </TableRow>
+	    
+	    <TableRow>
+	        <TextView
+	            android:text="Runtime: "
+	            android:padding="0dip"  
+	            style="@style/FieldLabel" />
+	        <TextView 
+	            android:id="@+id/runtime" 
+	            style="@style/InfoBox"  />
+	    </TableRow>
+	</TableLayout>
+   	
+	<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/show_name"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:text="Episodes"
+		style="@style/SectionHeader" />
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+	    android:stretchColumns="*"
+	    android:id="@+id/ep_table">
+	    <TableRow>
+	        <TextView
+	            android:text="Last:"
+	            style="@style/FieldLabel" />
+	        <TextView
+	            android:id="@+id/lastEp" 
+	            style="@style/InfoBox"  />
+	    </TableRow>
+	    
+	    <TableRow>
+	        <TextView
+	            android:text="Next: "
+	            style="@style/FieldLabel" />
+	        <TextView  
+	            android:id="@+id/nextEp" 
+	            style="@style/InfoBox"  />
+	    </TableRow>
+	</TableLayout>
+	
+	<ExpandableListView  
+		android:id="@+id/season_list"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+	/> 		
+</LinearLayout>
